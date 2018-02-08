@@ -1,12 +1,23 @@
-\documentclass[]{article}
+\documentclass[pdf]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[italian]{babel}
+\usepackage[english]{babel}
 
 \usepackage{amsthm}
+\usepackage{xparse}
+\usepackage{etoolbox}
+\usepackage{xcolor}
 
 \theoremstyle{definition}
 \newtheorem{defn}{Definizione}[section]
 \newtheorem{regl}{Regola}[section]
+
+\NewDocumentCommand{\todo}{m}{
+	\footnote{\textcolor{red}{#1}}%
+}
+
+\NewDocumentCommand{\EC}{}{
+	Executive Commitee%
+}
 
 \renewcommand{\i}[1]{\textit{#1}}
 \renewcommand{\b}[1]{\textbf{#1}}
@@ -100,6 +111,68 @@ Struttura (da valutare):
 	\item Elenco delle "colpe"
 	\item Elenco delle relative "sanzioni"
 \end{enumerate}
+
+\section{Cose veloci}
+
+\subsection{iscrizione allo student branch}
+
+\begin{enumerate}
+	\item lo studente (d'ora in poi denominato con $p$) si iscrive alla IEEE;
+	\item verificare che $p$ sia effettivamente iscritta all’IEEE;
+	\item il segretario deve richiedere a $p$ la mail relativa al suo account IEEE ed un numero telefonico contattabile;
+	\item il segretario iscrive il nuovo studente al google drive, alla mailing list, al sito, open project;
+	\item $p$ deve decidere di che comitato far parte;
+	\item da quel momento in poi $p$ è un membro attivo dello student branch;
+\end{enumerate}
+
+\subsection{Proposte e decisioni}
+
+Si possono fare 3 proposte: classiche, pecuniarie e straordinarie.
+
+le pecuniarie sono quelle proposte che comportano una spesa per ciascun membro attivo dello STB.
+
+le classiche sono quelle proposte che non sono pecuniarie.
+
+Le straordinarie sono proposte classiche che però devono essere decise velocemente (non possono rispettare i tempi definiti dalla procedura per la gestione delle propsote classiche).
+
+\subsubsection{Proposte classiche}
+
+il tutto inizia con una mail inviata al chair da parte di un qualunque membro attivo del STB. Nella mail deve essere contenuta la proposta da decidere: più la proposta è ben scritta maggiori saranno le possibilità che venga accettata. 
+
+La mail viene inviata al chair che a prescindere la inoltra a tutti gli altri membri dell'\EC{}. I membri dell'\EC{} hanno 3 giorni di tempo per visionare la proposta ed esprimere, tramite voto, se proporre la suddetta al resto del branch o meno.
+La votazione viene eseguita come segue:
+è a maggioranza. Se un membro dell'\EC{} non esprime preferenza non conta. Quindi la proposta per essere accettata deve ottenere:
+3/4
+2/3
+1/2
+1/1
+
+Nel caso in cui solo 2 membri dell'\EC{} abbiamo effettuato il voto ed essi siano in disaccordo (caso 1/2) di default la proposta viene rifiutata.
+
+In caso di proposta rifiutata il chair deve inviare una mail al proponente in cui dice:
+\begin{itemize}
+	\item propsta rifiutata;
+	\item motivi (proposta troppo vaga oppure inutile);
+\end{itemize}
+
+In caso di proposta accettata il chain deve inviare una mail al proponente in cui dice:
+\begin{itemize}
+	\item proposta accettata;
+\end{itemize}
+
+Il vice deve fare il form da proporre a tutti i membri attivi del branch, nel quale le uniche possibilità di risposta saranno SI'/NO. Ci deve essere una descrizione conforme alla proposta inviata dal proponente. 
+
+I membri attivi hanno una settimana di tempo per votare. Alla fine della stessa accade che:
+
+\begin{itemize}
+	\item la proposta viene accettata dal branch se e solo se raggiunge il 51\% dei votanti ed il 50\%\todo{decidere la percentuale meglio!} dei membri attivi del branch ha votato.
+	\item la proposta viene rifiutata altrimenti;
+\end{itemize}
+
+In entrambi i casi viene inviata una mail di conferma per  avvisare l'esito della votazione a tutti i membri attivi del branch. La mail è inviata dal vice.
+
+
+
 
 
 \end{document}
