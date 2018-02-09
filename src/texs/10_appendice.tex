@@ -1,119 +1,3 @@
-\documentclass[pdf]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-
-\usepackage{amsthm}
-\usepackage{xparse}
-\usepackage{etoolbox}
-\usepackage{xcolor}
-
-\theoremstyle{definition}
-\newtheorem{defn}{Definizione}[section]
-\newtheorem{regl}{Regola}[section]
-
-\NewDocumentCommand{\todo}{m}{
-	\footnote{\textcolor{red}{#1}}%
-}
-
-\NewDocumentCommand{\EC}{}{
-	Executive Commitee%
-}
-
-\renewcommand{\i}[1]{\textit{#1}}
-\renewcommand{\b}[1]{\textbf{#1}}
-
-%opening
-\title{Regolamento}
-\author{Executive Committee: Lorenzo Nodari, Stefano Prandini, Massimo Bono, Michele Dusi}
-\date{\today}
-
-\begin{document}
-
-\maketitle
-
-\newpage
-
-\section{Regolamentazione dei Membri}
-
-\begin{defn}[Iscritta IEEE]
-	Una persona viene definita \b{iscritta IEEE} se possiede un account con iscrizione all'IEEE.
-\end{defn}
-
-\begin{defn}[Esterno]
-	Una persona viene definita \b{esterna} se non è una persona iscritta IEEE.
-\end{defn}
-
-\begin{defn}[Status]
-	Viene definito \b{status} di una persona iscritta IEEE una qualunque etichetta associabile a tale persona.
-\end{defn}
-
-\begin{defn}[Status parametrizzato]
-Dato un insieme generico $A$ viene definito \b{status parametrizzato} di una persona iscritta IEEE una coppia $(s,v)$ dove $s$ è uno status dell'iscritto IEEE, e $v$ è un elemento dell'insieme $A$.
-\end{defn}
-
-\begin{regl}
-	Un iscritto IEEE acquisisce lo status di \b{\i{membro attivo}} dello Student Branch se si verificano contemporaneamente le seguenti condizioni:
-	\begin{itemize}
-		\item Si presenta ad altri \i{membri attivi} dello Student Branch.
-		\item Manifesta ad altri \i{membri attivi} dello Student Branch la volontà di partecipare alle attività dello Student Branch.
-		\item In passato non ha mai acquisito lo status di \i{membro passivo}.
-	\end{itemize}
-\end{regl}
-
-\begin{regl}
-	Un iscritto IEEE guadagna lo status di \b{\i{Membro Passivo}} dello Student Branch se gode dello status di \i{membro attivo} dello Student Branch e si verifica una qualunque delle seguenti condizioni:
-	\begin{itemize}
-		\item L'ultima presenza registrata nello Student Branch è antecedente di tre mesi.
-		\item 
-	\end{itemize}
-	Nell'istante in cui un iscritto IEEE guadagna tale status, egli perde immediatamente lo status di \i{membro attivo} dello Student Branch.
-\end{regl}
-
-\section{Regolamentazione delle Proposte}
-
-% Definizione delle tipologie di proposte
-
-\begin{defn}[Proposte]
-	Proposte.
-\end{defn}
-
-\begin{defn}[Proposte Classiche]
-	Proposte Classiche.
-\end{defn}
-
-\begin{defn}[Proposte Pecuniarie]
-	Vengono definite \textbf{proposte pecuniarie} tutte le proposte che coinvolgono flussi di denaro:
-	\begin{itemize}
-		\item in uscita dalla cassa dello Student Branch per spese ad uso dei membri dello Student Branch.
-		\item in uscita dalla cassa dello Student Branch per spese destinate a terzi.
-		\item in uscita dai portafogli dei membri attivi dello Student Branch per spese ad uso degli stessi. % DA SISTEMARE
-		\item in uscita dai portafogli dei membri attivi dello Student Branch verso la cassa dello Student Branch.
-	\end{itemize}
-\end{defn}
-
-\begin{defn}[Proposte Straordinarie]
-	Vengono definite \textbf{proposte straordinarie} le proposte
-\end{defn}
-
-% Differenze fra le due tipologie
-
-% Modalità di presa delle decisioni.
-\section{Regolamentazione delle Decisioni}
-
-\paragraph{Chi prende le decisioni}
-
-\paragraph{Modalità di votazione}
-
-\section{Regolamentazione delle Sanzioni}
-
-Struttura (da valutare):
-\begin{enumerate}
-	\item Elenco delle "colpe"
-	\item Elenco delle relative "sanzioni"
-\end{enumerate}
-
-\section{Cose veloci}
-
 \subsection{iscrizione allo student branch}
 
 \begin{enumerate}
@@ -285,7 +169,7 @@ Esistono 2 casistiche per la gestione del comportamento non consono:
 La classificazione tra un comportamento non consono e classico è a discrezione dell'\EC{}. L'\EC{} effettuerà una votazione per stabilire se un comportamento è da ritenersi grave oppure no. La votazione è a maggioranza e, in caso di assenti o non votanti nell'\EC{} si utilizzano le soglie dettate in precedenza, ossia:
 3/4
 2/3
-1/2 (default sì)
+1/2 (default si)
 1/1
 
 in caso siano stati espressi solo 2 voti ed i loro voti siano contrastanti, vince il sì che sta per "sì, il comportamento è ritenuto grave".
@@ -362,6 +246,4 @@ Se il membro inadempiente non è il referente di progetto, il referente di proge
 
 \subsection{Gestione vite}
 
-Ogni membro ha 3 un massimo di 3 vite. Se un membro perde tutte le vite viene escluso dal STB. Il 1° gennaio di ogni anno ogni membro acquista una vita.
-
-\end{document}
+Ogni membro ha 3 un massimo di 3 vite. Se un membro perde tutte le vite viene escluso dal STB. Il primo gennaio di ogni anno ogni membro acquista una vita.

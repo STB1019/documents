@@ -1,0 +1,34 @@
+\documentclass[pdf]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsthm}
+\usepackage{xparse}
+\usepackage{etoolbox}
+\usepackage{xcolor}
+
+\input{src/cmds/commands.tex}
+
+%opening
+\title{Regolamento}
+\author{Executive Committee: Lorenzo Nodari, Stefano Prandini, Massimo Bono, Michele Dusi}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\input{src/texs/00_notaIntroduttiva.tex}
+
+\input{src/texs/01_membri.tex}
+\input{src/texs/02_decisioniEProposte.tex}
+\input{src/texs/03_sanzioni.tex}
+
+\input{src/texs/10_appendice.tex}
+
+\section{Cose veloci}
+
+\end{document}
